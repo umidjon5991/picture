@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <picture>
+            <source
+            type="image/webp"
+            media="(max-width:425px)"
+            srcset="
+            ./images/Bitmap-mobile.webp 1x,
+            ./images/Bitmap-mobile@2.webp 2x
+            "
+            >
+            <source
+            type="image/webp"
+            media="(max-width:768px)"
+            srcset="
+            ./images/Bitmap-tablet.webp 1x,
+            ./images/Bitmap-tablet@2x.webp 2x
+            "
+            >
+            <source
+            srcset="
+            ./images/Bitmap.webp 1x,
+            ./images/Bitmap@2x.webp 2x
+            "
+            >
+
+            <source
+            media="(max-width:425px)"
+            srcset="
+            ./images/Bitmap-mobile.jpg 1x,
+            ./images/Bitmap-mobile@2.jpg 2x
+            "
+            >
+            <source
+            media="(max-width:768px)"
+            srcset="
+            ./images/Bitmap-tablet.jpg 1x,
+            ./images/Bitmap-tablet@2x.jpg 2x
+            "
+            >
+
+        <img src="./images/Bitmap.jpg"
+        srcset="
+            ./images/Bitmap.jpg 1x,
+            ./images/Bitmap@2x.jpg 2x"
+            alt="a men coffee holding"
+            width="445" height="474"
+        >
+            
+        </picture>
+    </div>
+</body>
+</html>
